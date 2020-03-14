@@ -1,0 +1,12 @@
+<p>
+    This is the default example. The string below is generated using a <code>load-n-cache</code> instance. Working with promises
+    let us use <code>AsyncPipe</code> to make it even simplier. Additionally, due to <code>AsyncPipe</code> returning 
+    <code>null</code> while promise is not fullfilled, we
+    can use <code>||</code> to display a loading message.
+</p>
+<p class="generated-text">
+    {{ (ds.loremIpsum() | async) || 'Loading...' }}
+</p>
+<button mat-raised-button color="primary" (click)="ds.flush()">
+    Click here to flush!
+</button>

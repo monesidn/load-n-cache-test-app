@@ -1,0 +1,14 @@
+<p>
+    This example shows how adding persistance allow for easy value storage across refresh. 
+</p>
+<p class="generated-text">
+    {{ (ds.loremIpsum() | async) || 'Loading...' }}
+</p>
+<div fxlayout="row" fxLayoutGap="8px">
+    <button mat-raised-button color="primary" (click)="ds.flush()">
+        Flush!
+    </button>
+    <button mat-raised-button color="primary" (click)="refresh()">
+        Refresh window
+    </button>
+</div>

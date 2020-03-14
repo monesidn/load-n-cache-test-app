@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'load-n-cache-test-app';
+
+  navLinks = [
+    {
+      path: '/promises',
+      label: 'Promises example'
+    },
+    {
+      path: '/persisted',
+      label: 'Persistance example'
+    },
+    {
+      path: '/rxjs',
+      label: 'Rxjs example'
+    },
+  ];
 }
