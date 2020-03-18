@@ -18,6 +18,10 @@ export class AppComponent {
       label: 'Persistance example'
     },
     {
+      path: '/custom-storage',
+      label: 'Custom storage example'
+    },
+    {
       path: '/rxjs',
       label: 'Rxjs example'
     },

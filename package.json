@@ -22,7 +22,8 @@
     "@angular/platform-browser": "~9.0.6",
     "@angular/platform-browser-dynamic": "~9.0.6",
     "@angular/router": "~9.0.6",
-    "load-n-cache": "file:../load-n-cache",
+    "load-n-cache": "^1.0.0",
+    "load-n-cache-rxjs": "file:../load-n-cache-rxjs",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

@@ -1,0 +1,24 @@
+
+<ng-template #spinner>
+    Loading...
+</ng-template>
+<p>
+    This example uses a custom persister to show how it can be used. The displayed random-generated string
+    is persisted across refresh using <code>localstorage</code>. The string is stored in an object which 
+    have a derived property not persisted at all. This example demonstrate how flexible can be persistance, 
+    you can easily store compressed data implementing only a few lines of code.
+</p>
+<p class="generated-text">
+    <span *ngIf="(ds.customObject() | async); else spinner">
+        String: {{ (ds.customObject() | async)?.str }}<br/>
+        Length: {{ (ds.customObject() | async)?.len }}<br/>
+    </span>
+</p>
+<div fxlayout="row" fxLayoutGap="8px">
+    <button mat-raised-button color="primary" (click)="ds.flush()">
+        Flush!
+    </button>
+    <button mat-raised-button color="primary" (click)="refresh()">
+        Refresh window
+    </button>
+</div>

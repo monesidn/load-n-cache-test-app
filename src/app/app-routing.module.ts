@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PromisesExComponent } from './promises-ex/promises-ex.component';
 import { RxjsExComponent } from './rxjs-ex/rxjs-ex.component';
 import { PersistedExComponent } from './persisted-ex/persisted-ex.component';
+import { CustomStorageExComponent } from './custom-storage-ex/custom-storage-ex.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,10 @@ const routes: Routes = [
   {
     path: 'persisted',
     component: PersistedExComponent
+  },
+  {
+    path: 'custom-storage',
+    component: CustomStorageExComponent
   },
   {
     path: 'rxjs',

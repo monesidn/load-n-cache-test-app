@@ -1,1 +1,15 @@
-<p>rxjs-ex works!</p>
+<p>
+    This example works the same as the "Persistance example" one but uses the rxjs wrapper so it 
+    actually work with Observable insted of promises. 
+</p>
+<p class="generated-text">
+    {{ (ds.randStr$ | async) || 'Loading...' }}
+</p>
+<div fxlayout="row" fxLayoutGap="8px">
+    <button mat-raised-button color="primary" (click)="ds.flush$.next()">
+        Flush!
+    </button>
+    <button mat-raised-button color="primary" (click)="refresh()">
+        Refresh window
+    </button>
+</div>

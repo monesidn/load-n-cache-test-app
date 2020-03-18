@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RxJsPersistedDSService } from '../services/RxJsPersistedDSService.service';
+
 
 @Component({
   selector: 'app-rxjs-ex',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RxjsExComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public ds: RxJsPersistedDSService
+  ) {
+
+  }
 
   ngOnInit(): void {
   }
 
+  refresh() {
+    window.location.reload();
+  }
 }
