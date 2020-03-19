@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { LoadNCache, PersistanceManager, TimestampedValue } from 'load-n-cache';
+import { LoadNCache, PersistenceManager, TimestampedValue } from 'load-n-cache';
 import { randomStr } from '../util/Random';
 
 const loremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
@@ -21,7 +21,7 @@ export class CustomObject {
 /**
  * Store a plain string in place of the object serialization
  */
-class CustomPersister implements PersistanceManager<CustomObject> {
+class CustomPersister implements PersistenceManager<CustomObject> {
 
     constructor(public lsKey = 'test-custom-persister') {
     }
@@ -52,11 +52,11 @@ class CustomPersister implements PersistanceManager<CustomObject> {
 @Injectable({
     providedIn: 'root'
 })
-export class CustomPersistanceDSService {
+export class CustomPersistenceDSService {
 
     private _value = new LoadNCache({
         loader: () => this.generateValue(),
-        persistance: new CustomPersister()
+        persistence: new CustomPersister()
     });
 
 

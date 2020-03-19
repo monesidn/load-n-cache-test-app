@@ -3,8 +3,6 @@ import { Subject, Observable } from 'rxjs';
 import { randomStr } from '../util/Random';
 import { loadNCache } from 'load-n-cache-rxjs';
 
-const loremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
-
 @Injectable({
     providedIn: 'root'
 })
@@ -18,7 +16,7 @@ export class RxJsPersistedDSService {
             })
             .pipe(loadNCache({
                 flushOn: () => this.flush$,
-                persistance: 'localStorage',
-                persistanceKey: 'example-message-rxjs'
+                persistence: 'localStorage',
+                persistenceKey: 'example-message-rxjs'
             }));
 }

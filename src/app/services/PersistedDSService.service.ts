@@ -10,8 +10,8 @@ export class PersistedDSService {
 
     private _loremIpsum = new LoadNCache({
         loader: () => this.generateDataPromise(),
-        persistance: 'localStorage',
-        persistanceKey: 'example-message'
+        persistence: 'localStorage',
+        persistenceKey: 'example-message'
     });
 
     public generated = 0;

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CustomPersistanceDSService } from '../services/CustomPersistanceDSService.service';
+import { CustomPersistenceDSService } from '../services/CustomPersistenceDSService.service';
 
 @Component({
   selector: 'app-custom-storage-ex',
@@ -9,7 +9,7 @@ import { CustomPersistanceDSService } from '../services/CustomPersistanceDSServi
 export class CustomStorageExComponent implements OnInit {
 
   constructor(
-    public ds: CustomPersistanceDSService
+    public ds: CustomPersistenceDSService
   ) { }
 
   ngOnInit(): void {

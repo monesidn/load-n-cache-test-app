@@ -15,7 +15,7 @@ export class AppComponent {
     },
     {
       path: '/persisted',
-      label: 'Persistance example'
+      label: 'Persistence example'
     },
     {
       path: '/custom-storage',
