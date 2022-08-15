@@ -19,7 +19,6 @@ import { RxjsExComponent } from './rxjs-ex/rxjs-ex.component';
     RxjsExComponent,
     PromisesExComponent,
     PersistedExComponent,
-    CustomStorageExComponent,
     CustomStorageExComponent
   ],
   imports: [

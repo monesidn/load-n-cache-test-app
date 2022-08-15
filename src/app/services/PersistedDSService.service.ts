@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { LoadNCache } from 'load-n-cache';
+import { LoadNCache } from '@monesidn/load-n-cache';
 
 const loremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
 

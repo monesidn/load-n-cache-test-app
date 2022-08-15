@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { LoadNCache, PersistenceManager, TimestampedValue } from 'load-n-cache';
+import { LoadNCache, PersistenceManager, TimestampedValue } from '@monesidn/load-n-cache';
 import { randomStr } from '../util/Random';
 
 const loremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';

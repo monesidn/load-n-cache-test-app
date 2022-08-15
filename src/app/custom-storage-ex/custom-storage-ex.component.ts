@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CustomPersistenceDSService } from '../services/CustomPersistenceDSService.service';
+import { CustomPersistenceDSService } from '../services/CustomPersistanceDSService.service';
 
 @Component({
   selector: 'app-custom-storage-ex',
